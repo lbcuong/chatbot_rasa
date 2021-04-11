@@ -1,0 +1,26 @@
+{
+    "restaurant": 
+    [
+        {
+            "id": 0,
+            "name": "Donath",
+            "cuisine": "Italian",
+            "outside-seating": true,
+            "price-range": "mid-range"
+        },
+        {
+            "id": 1,
+            "name": "Berlin Burrito Company",
+            "cuisine": "Mexican",
+            "outside-seating": false,
+            "price-range": "cheap"
+        },
+        {
+            "id": 2,
+            "name": "I due forni",
+            "cuisine": "Italian",
+            "outside-seating": true,
+            "price-range": "mid-range"
+        }
+    ]
+}

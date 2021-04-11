@@ -1,0 +1,19 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: advisory path 1
+  steps:
+  - user: |
+     Xin chào
+    intent: xin_chao
+  - action: utter_xin_chao
+  - user: |
+     Tư vấn
+    intent: hoi_ttgv
+  - action: utter_hoi_ttgv
+  - user: |
+     Tạm biệt
+    intent: tam_biet
+  - action: utter_tam_biet
+

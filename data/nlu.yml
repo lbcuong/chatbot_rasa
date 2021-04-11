@@ -1,0 +1,46 @@
+version: "2.0"
+nlu:
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - good morning
+      - good evening
+      - hey there
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you around
+      - see you later
+  - intent: query_knowledge_base
+    examples: |
+      - what [restaurants]{"entity": "object_type", "value": "restaurant"} can you recommend?
+      - list [Italian]{"entity": "cuisine"} [restaurants]{"entity": "object_type", "value": "restaurant"}
+      - does [Donath]{"entity": "restaurant"} restaurant have [outside seating]{"entity": "attribute", "value": "outside-seating"}?
+      - Does the [first one]{"entity": "mention", "value": "1"} have [outside seating]{"entity": "attribute", "value": "outside-seating"}
+      - Tell me more about [Donath]{"entity": "name"} [restaurant]{"entity": "restaurant"}.
+      - Tell me more about [Star]{"entity": "name"} [restaurant]{"entity": "restaurant"}.
+
+  - synonym: Italian
+    examples: |
+      - Italian
+      - italian
+
+  - synonym: Donath
+    examples: |
+      - Donath
+      - donath
+
+  - lookup: restaurant
+    examples: |
+      - Donath
+      - Berlin Burrito Company
+      - I due forni
